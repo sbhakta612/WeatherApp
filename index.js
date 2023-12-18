@@ -51,8 +51,9 @@ async function checkWeather(city) {
     }
   } else if (data.weather[0].main == "Haze") {
     weatherIcon.src = "weatherImages/wind.png";
+  } else if (data.weather[0].main == "Smoke") {
+    weatherIcon.src = "weatherImages/clouds.png";
   }
-
   if (data.main.temp >= 0 && data.main.temp <= 15) {
     document.querySelector(".temp-details").innerHTML =
       "Bundle up! Wear a coat or a parka. Wool, leather, or waterproof fabrics on the outside and layer with something warm like cashmere underneath. Boots would be great! Don't forget to accessorize with a scarf and gloves.";
