@@ -1,19 +1,27 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
 
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
   box-sizing: border-box;
 }
 
 body {
-  background: white;
+  background: url("https://images.unsplash.com/photo-1500740516770-92bd004b996e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNsb3VkeXxlbnwwfHwwfHx8MA%3D%3D")
+    no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: "Caveat", cursive;
 }
 .card {
   width: 90%;
   max-width: 470px;
-  background: linear-gradient(135deg, #00cffe, #5b548a);
+  background: rgb(40, 40, 40);
+  opacity: 70%;
   color: #fff;
   margin: 100px auto 0;
   border-radius: 20px;
@@ -37,7 +45,8 @@ body {
   border-radius: 30px;
   flex: 1;
   margin-right: 16px;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: "Caveat", cursive;
 }
 .search button {
   border: 0;
@@ -89,4 +98,8 @@ body {
 
 .weather {
   display: none;
+}
+.outfit-details {
+  font-size: 25px;
+  margin-bottom: 50px;
 }
