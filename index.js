@@ -50,7 +50,7 @@ async function checkWeather(city) {
   } else if (data.weather[0].main == "Snow") {
     weatherIcon.src = "weatherImages/snow.png";
     document.body.style.backgroundImage =
-      "url('https://www.google.com/url?sa=i&url=http%3A%2F%2Fffden-2.phys.uaf.edu%2F211_fall2013.web.dir%2FSean_Counihan%2FSnowfall.html&psig=AOvVaw2NG5VOd7kDL5EglkWYdVa3&ust=1703085630073000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOjK7sXmm4MDFQAAAAAdAAAAABAD')";
+      "url('https://fox4kc.com/wp-content/uploads/sites/16/2023/08/GettyImages-1428401936.jpg?w=2560&h=1440&crop=1')";
     document.querySelector(".icon-details").innerHTML =
       "Also, make sure you're wearing gloves so you can enjoy a good snowball fight!";
   } else if (data.weather[0].main == "Haze") {
