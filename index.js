@@ -57,13 +57,13 @@ async function checkWeather(city) {
     weatherIcon.src = "weatherImages/wind.png";
     document.body.style.backgroundImage =
       "url('https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/GettyImages-1272193101.jpg')";
-    document.querySelector(".wind-details").innerHTML =
+    document.querySelector(".icon-details").innerHTML =
       "And it's a bit hazy. Wearing a mask is advised.";
   } else if (data.weather[0].main == "Smoke") {
     weatherIcon.src = "weatherImages/clouds.png";
     document.body.style.backgroundImage =
       "url('https://uknow.uky.edu/sites/default/files/styles/uknow_story_image/public/GettyImages-1272193101.jpg')";
-    document.querySelector(".wind-details").innerHTML =
+    document.querySelector(".icon-details").innerHTML =
       "And wearing a mask would be a good idea.";
   }
   if (data.main.temp >= 0 && data.main.temp <= 15) {
